@@ -1,0 +1,27 @@
+<h1>Entrada e Saída de dados</h1>
+
+<h3>Digite um número inteiro</h3>
+
+<form id="numero">
+<input type="number" id="n1">
+<input type="submit" id="Enviar">
+</form>
+
+<h1 id="resultado"></h1>
+
+<script type="text/javascript">
+    var num = document.getElementById('numero');
+    var resu = document.getElementById('resultado');
+
+num.addEventListener('submit',function(e){
+    resu.innerText="O número informado foi " + parseInt(n1.value);
+    e.preventDefault();
+});
+
+</script>
+
+<br>
+<br>
+<br>
+<br>
+feito por José Nicolas Moura Alves

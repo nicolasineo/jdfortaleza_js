@@ -1,0 +1,23 @@
+<html><head><meta charset="utf-8"></head><head></head><body><h2>Programa para calcular velocidade de download</h2>
+
+<script>
+
+   arquivo = parseInt(prompt('Informe o tamanho do arquivo para donwload (em MB)'));
+   velocidade = parseInt(prompt('Informe a velocidade da sua internet (em Mbps)'));
+   tempo = arquivo / velocidade / 8;
+   minuto = tempo * 60.0;
+   minutoseg = minuto / 60;
+
+   document.writeln("<br>O tempo para download é: "+ minutoseg + ' minutos');
+</script>
+
+<br>
+<br>
+<h5>1 megabyte é igual a 8 megabits</h5>
+<h5>8 bits equivalem a 1 byte, portanto, para calcular isso, é necessário dividi-lo por 8</h5>
+
+<br>
+ <br>
+ feito por José Nicolas Moura Alves
+</body>
+</html>

@@ -1,0 +1,39 @@
+<h1>Escola Juventude Digital</h1>
+
+Insira suas notas <br>
+<input type="text"/><br/>
+<input type="text"/><br/>
+<input type="text"/><br/>
+<input type="text"/><br/>
+
+<button  onclick="calcularMedia()">Calcular</button>
+
+<p id="resultado"></p>
+
+<script type="text/javascript">
+
+function calcularMedia(){
+
+    inputs = document.querySelectorAll("input[type=text]");
+    
+    var total = 0
+    var quantidade = 0
+    for (n = 0; n < inputs.length; ++n) {
+        var valor = parseInt(inputs[n].value);
+        if(valor){
+              total = total + valor;
+        }
+        }
+    var media = total / 4;
+
+    document.getElementById('resultado').innerHTML  = "A Média é : " + media;
+
+
+}
+
+</script>
+<br>
+<br>
+<br>
+<br>
+feito por José Nicolas Moura Alves

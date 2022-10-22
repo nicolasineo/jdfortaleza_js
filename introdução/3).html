@@ -1,0 +1,53 @@
+<h1>Ler dois numeros e apresentar diversas operacoes feitas com eles</h1>
+
+
+<hr>
+
+<form id="formulario"> 
+	<input type="number" id="n1">
+	<input type="number" id="n2">
+	<input type="submit">
+
+</form>
+<h5>Resultado da soma dos números</h5>
+<h3 id="som"></h3> <hr> <h5>Resultado da subtração dos números</h5>
+<h3 id="sub"></h3> <hr> <h5>Resultado da divisão dos números</h5>
+<h3 id="div"></h3> <hr> <h5>Resultado da multiplicação dos números</h5>
+<h3 id="mul"></h3> <hr> <h5>Resultado ao quadrado do número 1</h5>
+<h3 id="quad1"></h3> <hr> <h5>Resultado ao quadrado do número 2</h5>
+<h3 id="quad2"></h3> <hr> <h5>Resultado ao cubo do número 1</h5>
+<h3 id="cub1"></h3> <hr> <h5>Resultado ao cubo do número 2</h5>
+<h3 id="cub2"></h3> <hr> 
+
+
+<script type="text/javascript">
+	
+	var form = document.getElementById('formulario');
+	var n1 = document.getElementById('n1');
+	var n2 = document.getElementById('n2');
+	var soma = document.getElementById('som');
+	var subtracao = document.getElementById('sub');
+	var divisao = document.getElementById('div');
+	var multiplicacao = document.getElementById('mul');
+	var quadrado1 = document.getElementById('quad1');
+	var cubo1 = document.getElementById('cub1');
+	var quadrado2 = document.getElementById('quad2');
+	var cubo2 = document.getElementById('cub2');
+
+	form.addEventListener('submit',function(e){
+		soma.innerText=parseInt(n1.value)+parseInt(n2.value);
+		subtracao.innerText=parseInt(n1.value)-parseInt(n2.value);
+		divisao.innerText=parseInt(n1.value)/parseInt(n2.value);
+		multiplicacao.innerText=parseInt(n1.value)*parseInt(n2.value);
+		quadrado1.innerText=parseInt(n1.value**2)
+		cubo1.innerText=parseInt(n1.value**3)
+		quadrado2.innerText=parseInt(n2.value**2)
+		cubo2.innerText=parseInt(n2.value**3)
+		e.preventDefault();
+	});
+	
+</script>
+
+<br>
+
+feito por José Nicolas Moura Alves
